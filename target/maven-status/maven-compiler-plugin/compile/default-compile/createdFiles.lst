@@ -1,0 +1,8 @@
+com\upsjb\usuarios\strategy\MayoresDe18Strategy.class
+com\upsjb\usuarios\UsuariosApplication.class
+com\upsjb\usuarios\model\Usuario.class
+com\upsjb\usuarios\strategy\TodosLosUsuariosStrategy.class
+com\upsjb\usuarios\service\UsuarioService.class
+com\upsjb\usuarios\controller\UsuarioController.class
+com\upsjb\usuarios\strategy\BusquedaUsuarioStrategy.class
+com\upsjb\usuarios\repository\UsuarioRepository.class
