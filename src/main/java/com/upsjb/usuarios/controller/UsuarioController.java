@@ -22,6 +22,12 @@ public class UsuarioController {
         this.service = service;
     }
 
+    // REDIRIGIR LA PAGINA PRINCIPAL A USUARIOS
+    @GetMapping("/")
+    public String redireccionarInicio() {
+        return "redirect:/usuarios";
+    }
+
     // LISTAR Y BUSCAR USUARIOS POR EMAIL
     @GetMapping
     public String inicio(
@@ -69,7 +75,6 @@ public class UsuarioController {
                     "Usuario registrado correctamente.");
 
         } catch (IllegalArgumentException e) {
-
             flash.addFlashAttribute("error", e.getMessage());
         }
 
@@ -127,7 +132,6 @@ public class UsuarioController {
                     "Usuario actualizado correctamente.");
 
         } catch (IllegalArgumentException e) {
-
             flash.addFlashAttribute("error", e.getMessage());
         }
 
@@ -148,7 +152,6 @@ public class UsuarioController {
                     "Usuario eliminado correctamente.");
 
         } catch (IllegalArgumentException e) {
-
             flash.addFlashAttribute("error", e.getMessage());
         }
 
